@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <title>Digital Dubai</title>
+</head>
+<body>
+    <nav>
+        <div class="cont">
+            <div><a href="#"><img src="../assets/img/dubai-gov.svg" alt="Dubai Gov"></a></div>
+            <div class="ele-two">
+                <div><a href="#"><img src="../assets/img/dubai-police.svg" alt="Dubai Police"></a></div>
+                <span class="line"></span>
+                <div><a href="#"><img src="../assets/img/digital-dubai.svg" alt="Digital Dubai"></a></div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <section class="main ques-one st-normal">
+            <div class="container">
+                <div class="back-shad"></div>
+                <div class="back-ele"></div>
+                <div class="pg-tit">Urban Development Survey</div>
+                <div class="pg-progress"><div class="bx-total"><span class="bx-completed"></span></div></div>
+                <div class="language-box">
+                    <div class="custom-select-wrapper-lang">
+                        <div class="custom-select-lang">
+                            <div class="custom-select-trigger-lang" selected-lang="arabic">Arabic-العربية</div>
+                            <div class="custom-options-lang">
+                                <span class="custom-option-lang" data-value="arabic">Arabic-العربية</span>
+                                <span class="custom-option-lang" data-value="english">English-الانجليزية</span>
+                                <span class="custom-option-lang" data-value="french">French-فرنسي</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-box">
+                    <form class="form-one">
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">When did you start your current job?</span> <span class="asterisk">*</span></label>
+                                </div>
+                                <div id="date_picker">
+                                    <div id="date_picker_input">
+                                        <div class="form-g-norm">
+                                            <label class="lab-two">Date</label>
+                                            <input type="text" id="date" class="onFocus inp-norm" readonly />
+                                            <span class="icon date"></span>
+                                        </div>
+                                    </div>
+                                    <div id="date_picker_calendar" class="hidden">
+                                        <div class="cal-cont">
+                                            <div id="calendar_header">
+                                                <button class="cal-btn back"></button>
+                                                <span class="cal-head-date"></span>
+                                                <button class="cal-btn front"></button>
+                                            </div>
+                                            <div class="cal-row"><input type="text" class="inp-date-dtls" id="selectedDateInput" readonly placeholder="--/--/----"/></div>
+                                            <div id="cal_wrapper">
+                                                <div id="cal_days"></div>
+                                                <div id="calendar_main"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one mar-botm">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">Please upload your ID</span></label>
+                                </div>
+                                <div class="file-g">
+                                    <div class="step stone act" id="step1">
+                                        <label for="uploadFile" class="lab-file-drop-drag">
+                                            <div class="cont">
+                                                <div class="icon"></div>
+                                                <div class="txt"><span class="unq">Click to upload</span> or drag and drop SVG, PNG, JBG or GIF (max. 800x400px)</div>
+                                            </div>
+                                            <span class="icon-hover"></span>
+                                            <input type="file" id="uploadFile" name="uploadFile" class="inp-file-drop-drag">
+                                        </label>
+                                    </div>
+                                    <div class="step sttwo" id="step2">
+                                        <div class="cont dtls">
+                                            <div class="col-1"><div class="icon"> <img src="../assets/img/icon/file-type-two.png" class="icon-28"></div></div>
+                                            <div class="col-2">
+                                                <div class="row">
+                                                    <div class="col-21">
+                                                        <span class="file-name">My ID</span>
+                                                        <span class="file-size">200 KB</span>
+                                                    </div>
+                                                    <div class="col-22">
+                                                        <button class="flx"><img src="../assets/img/icon/trash.png" class="icon-20"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-21">
+                                                        <div class="progress-line">
+                                                            <span class="prog-completed"><!--Here the Width in Percentage 40%--></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-22">
+                                                        <span class="progress-percentage">40%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step stthree" id="step3">
+                                        <div class="cont dtls">
+                                            <div class="col-1"><div class="icon"> <img src="../assets/img/icon/file-type.png" class="icon-30"></div></div>
+                                            <div class="col-2">
+                                                <div class="row">
+                                                    <div class="col-21">
+                                                        <span class="file-name">My ID</span>
+                                                        <div class="file-status">200 KB - 100% uploaded</div>
+                                                    </div>
+                                                    <div class="col-22 flx">
+                                                        <button class="flx"><img src="../assets/img/icon/trash.png" class="icon-20"></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alret-info"><div class="cont"><span class="icon"><img src="../assets/img/icon/info-circle.png" class="icon-22"></span> <span class="txt">The file type is not supported. Please upload an image in one of the following formats: JPG, PNG, or GIF.</span></div></div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">What is your age group?</span></label>
+                                </div>
+                                <div class="options">
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question3" class="radio" id="option31">
+                                        <label for="option31" class="custom-radio-one st-no-bor">Under 30</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question3" class="radio" id="option32">
+                                        <label for="option32" class="custom-radio-one st-no-bor">31-40</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question3" class="radio" id="option33">
+                                        <label for="option33" class="custom-radio-one st-no-bor">41-50</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question3" class="radio" id="option34">
+                                        <label for="option34" class="custom-radio-one st-no-bor">51-60</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question3" class="radio" id="option35">
+                                        <label for="option35" class="custom-radio-one st-no-bor">Over 60</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">When considering a city or neighborhood to live in, which of the following aspects of urban living do you consider most important? </span></label>
+                                    <div class="subtit">Select all that apply</div>
+                                </div>
+                                <div class="options med-gap">
+                                    <div class="check-g-one">
+                                        <input type="checkbox" name="question4" class="checkbox" id="option41">
+                                        <label for="option41" class="custom-check-one">Public transportation</label>
+                                    </div>
+                                    <div class="check-g-one">
+                                        <input type="checkbox" name="question4" class="checkbox" id="option42">
+                                        <label for="option42" class="custom-check-one">Access to parks and green spaces</label>
+                                    </div>
+                                    <div class="check-g-one">
+                                        <input type="checkbox" name="question4" class="checkbox" id="option43">
+                                        <label for="option43" class="custom-check-one">Affordable housing</label>
+                                    </div>
+                                    <div class="check-g-one">
+                                        <input type="checkbox" name="question4" class="checkbox" id="option44">
+                                        <label for="option44" class="custom-check-one">Safety and low crime rates</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">How long have you been in the organization?</span></label>
+                                </div>
+                                <div class="options">
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option51">
+                                        <label for="option51" class="custom-radio-one st-no-bor">Less than 1 year</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option52">
+                                        <label for="option52" class="custom-radio-one st-no-bor">1-2 years</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option53">
+                                        <label for="option53" class="custom-radio-one st-no-bor">2-3 years</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option54">
+                                        <label for="option54" class="custom-radio-one st-no-bor">3-4 years</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option55">
+                                        <label for="option55" class="custom-radio-one st-no-bor">4-5 years</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question5" class="radio" id="option56">
+                                        <label for="option56" class="custom-radio-one st-no-bor">More than 5 years</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">When did you start your current job?</span> <span class="asterisk">*</span></label>
+                                </div>
+                                <div class="form-g-norm">
+                                    <textarea class="inp-norm txtarea-norm" placeholder="Enter"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">What is your age group?</span></label>
+                                </div>
+                                <div class="options">
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question7" class="radio" id="option71">
+                                        <label for="option71" class="custom-radio-one st-no-bor">Under 30</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question7" class="radio" id="option72">
+                                        <label for="option72" class="custom-radio-one st-no-bor">31-40</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question7" class="radio" id="option73">
+                                        <label for="option73" class="custom-radio-one st-no-bor">41-50</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question7" class="radio" id="option74">
+                                        <label for="option74" class="custom-radio-one st-no-bor">51-60</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question7" class="radio" id="option75">
+                                        <label for="option75" class="custom-radio-one st-no-bor">Over 60</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">What is your job role?</span></label>
+                                </div>
+                                <div class="options">
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question8" class="radio" id="option81">
+                                        <label for="option81" class="custom-radio-one st-no-bor">Individual contributor</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question8" class="radio" id="option82">
+                                        <label for="option82" class="custom-radio-one st-no-bor">Team lead</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question8" class="radio" id="option83">
+                                        <label for="option83" class="custom-radio-one st-no-bor">Manager</label>
+                                    </div>
+                                    <div class="radio-g-one">
+                                        <input type="radio" name="question8" class="radio" id="option84">
+                                        <label for="option84" class="custom-radio-one st-no-bor">Senior executive</label>
+                                    </div>
+                                    <div class="radio-g-one st-three">
+                                        <input type="radio" name="question8" class="radio" id="option85">
+                                        <label for="option85" class="custom-radio-one st-three">Other</label>
+                                        <input type="text" class="inp-norm" placeholder="Please Specify">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">Please rank the following factors in order of importance when choosing a place to live </span></label>
+                                    <div class="subtit">(1 being the most important, 5 being the least important)</div>
+                                </div>
+                                <div class="options med-gap">
+                                    <div class="sort-cont">
+                                        <div class="sort-left-column">
+                                            <div class="box" data-info="Cost of living">Cost of living</div>
+                                            <div class="box" data-info="Proximity to work or school">Proximity to work or school</div>
+                                            <div class="box" data-info="Safety and crime rate">Safety and crime rate</div>
+                                            <div class="box" data-info="Access to public transportation">Access to public transportation</div>
+                                            <div class="box" data-info="Availability of green spaces/parks">Availability of green spaces/parks</div>
+                                        </div>
+                                        <div class="sort-right-column">
+                                            <div class="f-g">
+                                                <input type="text" class="box empty" id="right-1" readonly>
+                                            </div>
+                                            <div class="f-g">
+                                                <input type="text" class="box empty" id="right-2" readonly>
+                                            </div>
+                                            <div class="f-g">
+                                                <input type="text" class="box empty" id="right-3" readonly>
+                                            </div>
+                                            <div class="f-g">
+                                                <input type="text" class="box empty" id="right-4" readonly>
+                                            </div>
+                                            <div class="f-g">
+                                                <input type="text" class="box empty" id="right-5" readonly>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flx end">
+                                    <button class="reset-btn hide" id="sort-reset-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-st-one">
+                            <div class="form-group">
+                                <div class="head">
+                                    <label class="label-one custom-req"><span class="txt">How satisfied are you with the following aspects of our service? </span></label>
+                                    <div class="subtit">Choose only one choice</div>
+                                </div>
+                                <div class="opt-cont-surv">
+                                    <div class="cont">
+                                        <div class="row hed">
+                                            <div class="tcol first"></div>
+                                            <div class="tcol">Very Unhappy</div>
+                                            <div class="tcol">Unhappy</div>
+                                            <div class="tcol">Neutral</div>
+                                            <div class="tcol">Happy</div>
+                                            <div class="tcol">Very happy</div>
+                                            <div class="tcol">Extremely Happy</div>
+                                        </div>
+                                        <div class="row bdy visible">
+                                            <div class="tcol first">How satisfied are you with the ease of navigating through the platform and finding the features or services you need?</div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate11" value="very_unhappy">
+                                                <label for="rate11"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate12" value="unhappy">
+                                                <label for="rate12"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate13" value="neutral">
+                                                <label for="rate13"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate14" value="happy">
+                                                <label for="rate14"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate15" value="very_happy">
+                                                <label for="rate15"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv1" id="rate16" value="extremely_happy">
+                                                <label for="rate16"></label>
+                                            </div>
+                                        </div>
+                                        <div class="row bdy">
+                                            <div class="tcol first">How satisfied are you with the ease of navigating through the platform and finding the features or services you need?</div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate21" value="very_unhappy">
+                                                <label for="rate21"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate22" value="unhappy">
+                                                <label for="rate22"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate23" value="neutral">
+                                                <label for="rate23"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate24" value="happy">
+                                                <label for="rate24"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate25" value="very_happy">
+                                                <label for="rate25"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv2" id="rate26" value="extremely_happy">
+                                                <label for="rate26"></label>
+                                            </div>
+                                        </div>
+                                        <div class="row bdy">
+                                            <div class="tcol first">How satisfied are you with the ease of navigating through the platform and finding the features or services you need?</div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate31" value="very_unhappy">
+                                                <label for="rate31"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate32" value="unhappy">
+                                                <label for="rate32"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate33" value="neutral">
+                                                <label for="rate33"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate34" value="happy">
+                                                <label for="rate34"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate35" value="very_happy">
+                                                <label for="rate35"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv3" id="rate36" value="extremely_happy">
+                                                <label for="rate36"></label>
+                                            </div>
+                                        </div>
+                                        <div class="row bdy">
+                                            <div class="tcol first">How satisfied are you with the ease of navigating through the platform and finding the features or services you need?</div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate41" value="very_unhappy">
+                                                <label for="rate41"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate42" value="unhappy">
+                                                <label for="rate42"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate43" value="neutral">
+                                                <label for="rate43"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate44" value="happy">
+                                                <label for="rate44"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate45" value="very_happy">
+                                                <label for="rate45"></label>
+                                            </div>
+                                            <div class="tcol">
+                                                <input type="radio" class="radio-st-two radio-row" name="surv4" id="rate46" value="extremely_happy">
+                                                <label for="rate46"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-btn flx end">
+                            <input type="submit" value="Submit" class="btn-st btn-prim-one">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="flx copyright-text">© 2024 Digital Dubai.</div>
+        </div>
+    </footer>
+
+    <!-- Add class (act) to active popup -->
+    <div class="popup" id="popError">
+        <div class="card">
+            <div class="cont">
+                <div class="dtls">
+                    <div class="icon-danger"></div>
+                    <div class="desc">It looks like you've skipped a few questions. Feel free to go back and complete them if you'd like, but you're welcome to submit the survey at any time.</div>
+                </div>
+                <div class="row-btns">
+                    <button class="btn-st btn-outline-two btn-close-pop" pop-id="popError">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed-links">
+        <a href="../">Main</a>
+        <a href="../questions1/">Q1</a>
+        <a href="../questions2/">Q2</a>
+        <a href="../questions3/">Q3</a>
+        <a href="#">Q4</a>
+        <a href="../thanks/">Thanx</a>
+    </div>
+    <script src="../assets/js/general.js"></script>
+    <script src="master.js"></script>
+</body>
+</html>
